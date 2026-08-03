@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lalit Sharma | SEO Expert – On-Page, Off-Page, Technical &amp; Local SEO</title>
+<title>Lalit Sharma | SEO Expert – On-Page, Off-Page, Technical & Local SEO</title>
 <meta name="description" content="Lalit Sharma is an SEO expert with 4+ years of experience in on-page, off-page, technical and local SEO. Hire a freelance SEO specialist to grow your organic traffic.">
 <meta name="keywords" content="SEO expert, SEO freelancer, on-page SEO, off-page SEO, technical SEO, local SEO, hire SEO specialist, Lalit Sharma">
 <meta name="author" content="Lalit Sharma">
@@ -16,7 +16,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-R66777HYQ3');
 </script>
 
@@ -149,6 +148,7 @@
   .eyebrow{font-family:var(--font-mono);font-size:12px;color:var(--accent);text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px;}
   h2{font-family:var(--font-display);font-size:clamp(26px,3.4vw,34px);font-weight:600;margin-bottom:20px;}
   .lede{color:var(--muted);font-size:17px;max-width:620px;margin-bottom:8px;}
+  .section-subtitle{font-size:15px;color:var(--muted);max-width:620px;margin-bottom:24px;}
 
   .about-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:48px;align-items:start;margin-top:32px;}
   .metric-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
@@ -184,6 +184,173 @@
   .process-num{font-family:var(--font-mono);font-size:13px;color:var(--accent);padding-top:3px;}
   .process-item h3{font-family:var(--font-display);font-size:19px;font-weight:600;margin-bottom:6px;}
   .process-item p{color:var(--muted);font-size:14.5px;max-width:560px;}
+
+  /* Pricing Section Styles */
+  .pricing-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:24px;margin-top:32px;}
+  .price-card{
+    background:var(--paper-2);border:1px solid var(--border);border-radius:12px;
+    padding:32px 28px;transition:border-color .15s, transform .15s, box-shadow .15s;
+    position:relative;
+  }
+  .price-card:hover{
+    border-color:var(--accent);
+    transform:translateY(-4px);
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  }
+  .price-card.featured{
+    border:2px solid var(--accent);
+    transform:scale(1.02);
+  }
+  .price-card.featured::before{
+    content:"MOST POPULAR";
+    position:absolute;
+    top:-12px;
+    left:50%;
+    transform:translateX(-50%);
+    background:var(--accent);
+    color:#fff;
+    padding:6px 18px;
+    border-radius:20px;
+    font-size:11px;
+    font-weight:600;
+    letter-spacing:.03em;
+    text-transform:uppercase;
+  }
+  .price-card h3{
+    font-family:var(--font-display);
+    font-size:22px;
+    font-weight:600;
+    color:var(--ink);
+    margin-bottom:12px;
+  }
+  .price{
+    font-family:var(--font-display);
+    font-size:38px;
+    font-weight:700;
+    color:var(--accent);
+    margin:16px 0;
+  }
+  .price span{
+    font-family:var(--font-body);
+    font-size:14px;
+    color:var(--muted);
+    font-weight:400;
+  }
+  .price-features{
+    list-style:none;
+    margin:20px 0;
+  }
+  .price-features li{
+    padding:10px 0;
+    font-size:14px;
+    color:var(--muted);
+    border-bottom:1px solid var(--border);
+  }
+  .price-features li:last-child{
+    border-bottom:none;
+  }
+  .price-features li::before{
+    content:"✓";
+    color:var(--accent);
+    font-weight:600;
+    margin-right:10px;
+  }
+  .price-btn{
+    display:block;
+    width:100%;
+    text-align:center;
+    background:var(--accent);
+    color:#fff;
+    padding:14px 24px;
+    border-radius:6px;
+    font-weight:500;
+    font-size:15px;
+    margin-top:20px;
+    transition:background .15s, transform .15s;
+  }
+  .price-btn:hover{
+    background:#096b47;
+    transform:translateY(-2px);
+  }
+
+  /* Portfolio Section Styles */
+  .portfolio-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:20px;margin-top:32px;}
+  .portfolio-item{
+    background:var(--paper-2);
+    border:1px solid var(--border);
+    border-radius:12px;
+    padding:24px;
+    transition:border-color .15s, transform .15s, box-shadow .15s;
+    border-left:4px solid var(--accent);
+  }
+  .portfolio-item:hover{
+    border-color:var(--accent);
+    transform:translateX(6px);
+    box-shadow:0 6px 20px rgba(0,0,0,0.06);
+  }
+  .portfolio-item h3{
+    font-family:var(--font-display);
+    font-size:20px;
+    font-weight:600;
+    color:var(--ink);
+    margin-bottom:8px;
+  }
+  .portfolio-item p{
+    font-size:14px;
+    color:var(--muted);
+    margin-bottom:10px;
+  }
+  .portfolio-item a{
+    font-size:14px;
+    color:var(--accent);
+    font-weight:500;
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+  }
+  .portfolio-item a:hover{
+    text-decoration:underline;
+  }
+  .status{
+    display:inline-block;
+    background:#dcfce7;
+    color:#16a34a;
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:600;
+    font-family:var(--font-mono);
+    text-transform:uppercase;
+    letter-spacing:.03em;
+  }
+
+  .stats-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));
+    gap:20px;
+    margin-top:40px;
+  }
+  .stat-box{
+    background:linear-gradient(135deg, var(--accent) 0%, #096b47 100%);
+    color:#fff;
+    padding:28px 20px;
+    border-radius:12px;
+    text-align:center;
+  }
+  .stat-number{
+    font-family:var(--font-display);
+    font-size:42px;
+    font-weight:700;
+    display:block;
+    margin-bottom:8px;
+  }
+  .stat-label{
+    font-size:14px;
+    opacity:0.9;
+    font-family:var(--font-mono);
+    text-transform:uppercase;
+    letter-spacing:.04em;
+  }
 
   .contact-box{
     background:var(--ink);color:var(--paper);border-radius:16px;
@@ -226,6 +393,9 @@
     .about-grid, .services-grid{grid-template-columns:1fr;}
     .sitelinks{grid-template-columns:1fr;}
     .contact-box{padding:28px;}
+    .pricing-grid{grid-template-columns:1fr;}
+    .portfolio-grid{grid-template-columns:1fr;}
+    .results-grid{grid-template-columns:1fr;}
   }
 </style>
 </head>
@@ -238,6 +408,8 @@
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#process">Process</a></li>
         <li><a href="#results">Results</a></li>
@@ -263,15 +435,15 @@
       <p class="serp-desc">Freelance SEO specialist helping businesses rank higher on Google through proven on-page, off-page, technical and local SEO strategies. 4 years of white-hat, results-driven work.</p>
 
       <div class="sitelinks">
-        <a href="#services">Services &rarr;</a>
-        <a href="#skills">Tools &amp; skills &rarr;</a>
-        <a href="#process">My process &rarr;</a>
-        <a href="#contact">Contact &rarr;</a>
+        <a href="#services">Services →</a>
+        <a href="#pricing">Pricing →</a>
+        <a href="#portfolio">Portfolio →</a>
+        <a href="#contact">Contact →</a>
       </div>
 
       <div class="hero-ctas">
         <a href="#contact" class="btn-primary">Start a project</a>
-        <a href="#services" class="btn-secondary">See services</a>
+        <a href="#pricing" class="btn-secondary">See pricing</a>
       </div>
     </div>
   </section>
@@ -305,25 +477,157 @@
           <div class="service-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19V6a2 2 0 0 1 2-2h8l6 6v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z"/><path d="M14 4v5a1 1 0 0 0 1 1h5"/></svg></div>
           <h3>On-Page SEO</h3>
           <p>Content structure, keyword mapping, title tags, meta descriptions, headings, internal linking and image optimization to make each page fully search-ready.</p>
-          <span class="service-tag">meta &middot; keywords &middot; content</span>
+          <span class="service-tag">meta · keywords · content</span>
         </div>
         <div class="service-card">
           <div class="service-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></div>
           <h3>Off-Page SEO</h3>
           <p>Authority building through quality backlinks, digital PR, guest outreach and brand mentions that strengthen domain trust.</p>
-          <span class="service-tag">backlinks &middot; authority &middot; outreach</span>
+          <span class="service-tag">backlinks · authority · outreach</span>
         </div>
         <div class="service-card">
           <div class="service-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4.5 8-11.8A8 8 0 0 0 4 10.2C4 17.5 12 22 12 22Z"/><circle cx="12" cy="10" r="3"/></svg></div>
           <h3>Local SEO</h3>
           <p>Google Business Profile optimization, local citations, review strategy and map-pack visibility for location-based businesses.</p>
-          <span class="service-tag">GBP &middot; maps &middot; citations</span>
+          <span class="service-tag">GBP · maps · citations</span>
         </div>
         <div class="service-card">
-          <div class="service-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.87l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.7 1.7 0 0 0-1.87-.34 1.7 1.7 0 0 0-1.04 1.56V21a2 2 0 0 1-4 0v-.09A1.7 1.7 0 0 0 9 19.36a1.7 1.7 0 0 0-1.87.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.7 1.7 0 0 0 4.64 15a1.7 1.7 0 0 0-1.56-1.04H3a2 2 0 0 1 0-4h.09A1.7 1.7 0 0 0 4.64 9a1.7 1.7 0 0 0-.34-1.87l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.7 1.7 0 0 0 9 4.64a1.7 1.7 0 0 0 1.04-1.56V3a2 2 0 0 1 4 0v.09A1.7 1.7 0 0 0 15 4.64a1.7 1.7 0 0 0 1.87-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.7 1.7 0 0 0 19.36 9a1.7 1.7 0 0 0 1.56 1.04H21a2 2 0 0 1 0 4h-.09a1.7 1.7 0 0 0-1.51 1.04Z"/></svg></div>
+          <div class="service-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.87l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.7 1.7 0 0 0-1.87-.34 1.7 1.7 0 0 0-1.04 1.56V21a2 2 0 0 1-4 0v-.09A1.7 1.7 0 0 0 9 19.36a1.7 1.7 0 0 0-1.87.34l-.06.06a2 2 0 1 1-2.83-2.83l.06.06A1.7 1.7 0 0 0 4.64 15a1.7 1.7 0 0 0-1.56-1.04H3a2 2 0 0 1 0-4h.09A1.7 1.7 0 0 0 4.64 9a1.7 1.7 0 0 0-.34-1.87l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.7 1.7 0 0 0 9 4.64a1.7 1.7 0 0 0 1.04-1.56V3a2 2 0 0 1 4 0v.09A1.7 1.7 0 0 0 15 4.64a1.7 1.7 0 0 0 1.87-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.7 1.7 0 0 0 19.36 9a1.7 1.7 0 0 0 1.56 1.04H21a2 2 0 0 1 0 4h-.09a1.7 1.7 0 0 0-1.51 1.04Z"/></svg></div>
           <h3>Technical SEO</h3>
           <p>Site speed, crawlability, indexation, schema markup, mobile-friendliness and Core Web Vitals — the foundation search engines rely on.</p>
-          <span class="service-tag">speed &middot; schema &middot; crawling</span>
+          <span class="service-tag">speed · schema · crawling</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING SECTION -->
+  <section id="pricing" class="section-divider">
+    <div class="wrap">
+      <p class="eyebrow">Affordable monthly plans</p>
+      <h2>Pricing Packages</h2>
+      <p class="section-subtitle">Transparent pricing with no hidden fees. Choose the plan that fits your goals.</p>
+      <div class="pricing-grid">
+        <!-- Starter Package -->
+        <div class="price-card">
+          <h3>Starter Package</h3>
+          <div class="price">₹10,000<span>/month</span></div>
+          <ul class="price-features">
+            <li><strong>45 High-Quality Backlinks</strong> (DA 30+)</li>
+            <li>On-Page SEO (Up to 10 Pages)</li>
+            <li>Google Search Console Setup</li>
+            <li>Meta Tags Optimization</li>
+            <li>XML Sitemap & Robots.txt</li>
+            <li>Keyword Research (10 Keywords)</li>
+            <li>Monthly Progress Report</li>
+            <li>Email Support</li>
+          </ul>
+          <a href="#contact" class="price-btn">Get Started</a>
+        </div>
+
+        <!-- Growth Package -->
+        <div class="price-card featured">
+          <h3>Growth Package</h3>
+          <div class="price">₹15,000<span>/month</span></div>
+          <ul class="price-features">
+            <li><strong>65 High-Quality Backlinks</strong> (DA 40+)</li>
+            <li>On-Page SEO (Up to 20 Pages)</li>
+            <li>Google Search Console + Monitoring</li>
+            <li>Google Analytics Setup</li>
+            <li>Meta Tags Optimization</li>
+            <li>XML Sitemap & Robots.txt</li>
+            <li>Keyword Research (20 Keywords)</li>
+            <li>Competitor Analysis</li>
+            <li>Technical SEO Audit</li>
+            <li>Monthly Report + Call</li>
+            <li>Priority Support</li>
+          </ul>
+          <a href="#contact" class="price-btn">Get Started</a>
+        </div>
+
+        <!-- Pro Package -->
+        <div class="price-card">
+          <h3>Pro Package</h3>
+          <div class="price">₹20,000<span>/month</span></div>
+          <ul class="price-features">
+            <li><strong>100 High-Quality Backlinks</strong> (DA 50+)</li>
+            <li>On-Page SEO (Unlimited Pages)</li>
+            <li>Google Search Console Management</li>
+            <li>Google Analytics Setup + Config</li>
+            <li>Complete Meta Tags Optimization</li>
+            <li>XML Sitemap & Robots.txt</li>
+            <li>Keyword Research (30+ Keywords)</li>
+            <li>Monthly Competitor Analysis</li>
+            <li>Technical SEO Audit & Fixes</li>
+            <li>Content Strategy (4 Blog Posts)</li>
+            <li>Weekly Progress Reports</li>
+            <li>Bi-Weekly Strategy Calls</li>
+            <li>24/7 Priority Support</li>
+          </ul>
+          <a href="#contact" class="price-btn">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO SECTION -->
+  <section id="portfolio" class="section-divider">
+    <div class="wrap">
+      <p class="eyebrow">Proven track record</p>
+      <h2>My Portfolio</h2>
+      <p class="section-subtitle">Real projects, real results. See what I've accomplished for my clients.</p>
+
+      <!-- Completed Projects -->
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <h3>Bansal Agro Foods</h3>
+          <p>Industry: Food & Agriculture</p>
+          <span class="status">Completed</span>
+        </div>
+        <div class="portfolio-item">
+          <h3>Code with Himanshu</h3>
+          <p>Industry: Education / Tech</p>
+          <span class="status">Completed</span>
+        </div>
+        <div class="portfolio-item">
+          <h3>Quick Junk Pro</h3>
+          <p>Industry: Junk Removal</p>
+          <span class="status">Completed</span>
+        </div>
+        <div class="portfolio-item">
+          <h3>Waraich Truck Repairs</h3>
+          <p>Industry: Automotive</p>
+          <span class="status">Completed</span>
+        </div>
+        <div class="portfolio-item">
+          <h3>Re Thinking the Future</h3>
+          <p>Industry: Consulting</p>
+          <span class="status">Completed</span>
+        </div>
+        <div class="portfolio-item">
+          <h3>Dream Cleaning Company</h3>
+          <p>Industry: Cleaning Services</p>
+          <span class="status">Completed</span>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="stats-grid">
+        <div class="stat-box">
+          <span class="stat-number">6</span>
+          <span class="stat-label">Projects Completed</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Client Satisfaction</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-number">4+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-number">4</span>
+          <span class="stat-label">Core Specialities</span>
         </div>
       </div>
     </div>
@@ -386,7 +690,6 @@
           <p class="result-label">Before</p>
           <div class="result-shot">
             <img src="before-gsc.png" alt="Google Search Console performance before SEO work" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-           <!--   <span style="display:none;">Add images/before-gsc.png to the images folder</span> -->
           </div>
           <p class="result-caption">Clicks and impressions before optimization began.</p>
         </div>
@@ -394,7 +697,6 @@
           <p class="result-label">After</p>
           <div class="result-shot">
             <img src="after-gsc.png" alt="Google Search Console performance after SEO work" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-             <!-- <span style="display:none;">Add images/after-gsc.png to the images folder</span> -->
           </div>
           <p class="result-caption">Clicks and impressions after optimization.</p>
         </div>
@@ -406,7 +708,6 @@
           <p class="result-label">Before</p>
           <div class="result-shot">
             <img src="before-Ga4.png" alt="Google Analytics traffic before SEO work" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <!-- <span style="display:none;">Add images/before-Ga4.png to the images folder</span> -->
           </div>
           <p class="result-caption">Organic traffic before optimization began.</p>
         </div>
@@ -414,7 +715,6 @@
           <p class="result-label">After</p>
           <div class="result-shot">
             <img src="after-Ga4.png" alt="Google Analytics traffic after SEO work" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-           <!--  <span style="display:none;">Add after-Ga4.png to the images folder</span> -->
           </div>
           <p class="result-caption">Organic traffic after optimization.</p>
         </div>
@@ -429,7 +729,7 @@
         <h2>Let's rank your website higher</h2>
         <p class="lede">Tell me about your website and goals — I'll get back with how I can help.</p>
         <div class="contact-methods">
-          <a class="contact-btn" href="mailto:abusharma2580@gmail.com">Email me &rarr;</a>
+          <a class="contact-btn" href="mailto:abusharma2580@gmail.com">Email me →</a>
           <a class="contact-btn ghost" href="https://wa.me/918219578306" target="_blank" rel="noopener">WhatsApp</a>
           <a class="contact-btn ghost" href="https://in.linkedin.com/in/lalit-sharma-266139207" target="_blank" rel="noopener">LinkedIn</a>
         </div>
